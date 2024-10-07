@@ -4,12 +4,16 @@ public abstract class Canis {
 
   private int numLegs = 4;
 
+  static{
+    System.out.println("Initializing Canis class");
+  }
+
   {
     initialize();
   }
 
   public Canis() {
-    System.out.println("When the constructos completes, the instance is ready for use");
+    System.out.println("When the constructor completes, the instance is ready for use");
   }
 
   public abstract void hunt();

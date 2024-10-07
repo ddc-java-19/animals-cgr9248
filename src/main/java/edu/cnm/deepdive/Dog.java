@@ -2,6 +2,15 @@ package edu.cnm.deepdive;
 
 public class Dog extends Wolf implements Trainable {
 
+  static{
+    System.out.println("Initializing Dog class");
+  }
+
+  public Dog() {
+    super(0);
+    System.out.println("When the constructor completes, the dog us ready");
+  }
+
   @Override
   public void hunt() {
     System.out.println("Dogs hunt in a large variety of specialized ways, according to breed");  }

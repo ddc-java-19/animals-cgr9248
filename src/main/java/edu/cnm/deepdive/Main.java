@@ -8,10 +8,10 @@ public class Main {
 
   public static void main(String[] args) {
     List<Canis> shelter = new ArrayList<>();
-    shelter.add(new Wolf());
-    shelter.add(new Wolf());
-    shelter.add(new Coyote());
-    shelter.add(new Coyote());
+    // shelter.add(new Wolf());
+    // shelter.add(new Wolf());
+    // shelter.add(new Coyote());
+    //shelter.add(new Coyote());
     shelter.add(new Dog());
     shelter.add(new Dog());
     Collections.shuffle(shelter);
@@ -19,7 +19,7 @@ public class Main {
       canis.vocalize();
       canis.hunt();
       if (canis instanceof Dog dog) {
-         dog.perform();
+        dog.perform();
       }
 //      canis.describe();
     }
